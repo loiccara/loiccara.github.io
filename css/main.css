@@ -233,6 +233,13 @@ strong {
   padding: 45px;
 }
 
+/* Mobile-specific padding (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .tab-content {
+    padding: 15px; /* Reduced padding for mobile */
+  }
+}
+
 .nav-tabs {
   background-color: var(--section-bg-color);
   border-radius: var(--border-radius-large);
