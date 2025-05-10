@@ -208,6 +208,12 @@ strong {
   padding-bottom: 100px;
 }
 
+.section-big-padding {
+  padding-top: 200px;
+  padding-bottom: 100px;
+
+}
+
 .section-bg {
   background-color: var(--section-bg-color);
 }
@@ -320,6 +326,10 @@ strong {
   color: var(--white-color);
 }
 
+.navbar-dark {
+  background: var(--dark-color)!important;
+}
+
 .custom-btn-bg-white {
   border-color: var(--white-color);
   color: var(--white-color);
@@ -360,7 +370,7 @@ strong {
   top: 0;
   right: 0;
   left: 0;
-  margin-top: 51px;
+  /*margin-top: 51px;*/
 }
 
 .sticky-wrapper.is-sticky .navbar {
@@ -564,7 +574,11 @@ strong {
 .artists-image-wrap p{
   text-align: center;
   font-weight: var(--font-weight-bold);
+}
 
+.artists-text {
+    padding-top: 100px;
+     text-align: justify;
 }
 
 /*---------------------------------------
@@ -663,6 +677,7 @@ strong {
 /*---------------------------------------
   SCHEDULE              
 -----------------------------------------*/
+
 .schedule-section {
   background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
   background-color: #242424;
@@ -670,9 +685,23 @@ strong {
   background-position: center;
   background-size: cover;
 }
+
+
 .table-responsive {
 	filter: drop-shadow(2px 2px 4px #606060);
 }
+
+@media screen and (max-width: 768px) {
+  .table-responsive  {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
 
 .schedule-table {
   border-radius: var(--border-radius-medium);
@@ -740,6 +769,16 @@ strong {
   z-index: 2;
 }
 
+/*---------------------------------------
+  SCHEDULE FOR MOBILES
+-----------------------------------------*/
+
+
+@media only screen and (max-width: 768px) {
+  .tab-content {
+    padding: 15px;
+  }
+}
 
 /*---------------------------------------
   PRICING              
