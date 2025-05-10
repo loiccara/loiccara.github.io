@@ -578,7 +578,10 @@ strong {
 
 .artists-text {
     padding-top: 100px;
-     text-align: justify;
+ }
+
+.artists-text p{
+    text-align: justify;
 }
 
 /*---------------------------------------
